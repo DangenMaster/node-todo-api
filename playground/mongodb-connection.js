@@ -8,7 +8,7 @@ MongoClient.connect('mongodb://localhost:27017/', { useNewUrlParser: true }, (er
     const db = client.db('TodoApp');
 
     db.collection('Todos').insertOne({
-        text: 'Something more to do',
+        text: 'Something more and mode to do',
         completed: false
     }, (err, result) => {
         if (err) {
